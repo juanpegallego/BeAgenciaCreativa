@@ -203,7 +203,8 @@ article {
   color: white;
   display: grid;
   scroll-snap-align: center;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  overflow-x: hidden; }
   @media screen and (max-width: 450px) {
     article {
       display: flex;
@@ -267,10 +268,11 @@ article {
         article .right__container img {
           width: 200px;
           position: relative;
-          right: 0px;
+          right: 75px;
           margin-left: 250px;
-          top: 0px;
-          z-index: -1; } }
+          top: 100px;
+          z-index: -1;
+          opacity: .8; } }
 @keyframes planetMoving {
   0% {
     transform: translateY(8px); }
