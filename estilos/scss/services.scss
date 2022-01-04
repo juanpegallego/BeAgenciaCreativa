@@ -17,6 +17,9 @@ $SecundarioTrans: rgba(247, 183, 193, 0.466);
     box-sizing: border-box;
     font-size: 10px;
 }
+html{
+  overflow-x: hidden;
+}
 
 body{
     min-height: 100vh;
