@@ -9,11 +9,7 @@ $SecundarioClaro: rgb(248, 217, 221);
 $SecundarioOscuro: rgb(247, 146, 161);
 $SecundarioTrans: rgba(247, 183, 193, 0.466);
 
-$smallest:375px;    
-$small: 600px;
-$medium: 900px;
-$big:1200px;
-$desktop:1824px;
+
 
 *{
     margin: 0;
@@ -43,169 +39,7 @@ body{
         
     }
     
-    #hamburguer{
-        display: flex;    
-        border-radius: 5px;    
-        background-color: rgba(128, 128, 128, 0.678);
-        font-size: 5rem;
-        position: absolute;
-        top: 0px;
-        color: white;
-        width: 10%;
-        min-width: 50px;
-        height: 50px;
-        right:  0px;
-        visibility: visible;
-        z-index: 999999;
-      
-      
-        @keyframes rotateHamburguer {
-          from{
-            transform: none;
-            border-radius: 50%; 
-          }
-          to{
-            transform: rotate(360deg);
-            border-radius: 5px; 
-          }
-        }
-      
-        @media screen and (max-width: $big) {
-          top: 5px;
-          position: absolute;   
-          right:5px;
-          visibility: visible;
-          display: flex;
-       }   
-      }
-      nav
-      {
-          width: 100vw;
-          height: 80px;
-          margin: auto;
-          display: flex;
-          justify-content: center;
-          top: 0px;
-          background-color: transparent;
-          position: relative;
-          border-top : none;
-          @media screen and (max-width: $big) {
-              width:65vw;
-              height: 225px;
-              position: absolute;
-              left: initial;
-              transform: translateY(-500px);
-              top: 0px;
-              left: unset;
-              border-bottom-left-radius: 1rem;
-              border-bottom-right-radius: 1rem;
-              transition: all .5s;
-            } 
-            
-            .navigation
-          {        
-              display: flex;
-              justify-content: space-evenly;
-              align-items: center;
-              width: 40%;
-              margin-left: auto;
-              flex-direction: row;
-              margin:10px 100px 20px auto;   
-      
-             
-              .nav__logo{
-                margin-right: auto;
-                position: relative;
-                display: flex;
-                left: -630px;
-                min-width: 250px;
-                justify-content: center;
-                align-items: center;
-                font-size: 13em;
-                backdrop-filter: blur(9px);
-                strong{
-                  margin-right: 7px;
-                  font-size: 3rem;
-                  color: $Secundario;
-                }
-              }
-      
-              @media screen and (max-width: $big) {
-                  width: 90%;
-                  flex-direction: column;    
-                  align-items: center; 
-                  justify-content: space-evenly; 
-                  align-items: center;  
-                }           
-                     
-          }
-      
-          .nav_wrapper
-          {
-              min-width: 120px;
-              display: flex;
-              justify-content: center;
-              align-items: center;   
-      
-              &:hover .hide_lista{
-                display: block; 
-              }
-              
-              
-              @media screen and (max-width: $big) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                min-height: 40px;
-                width: 100%;          
-                &:hover .hide_lista{
-                  display: none;
-                }
-              }          
-      
-             .nav_item{
-              width: 100%;
-              list-style: none;
-             
-              &:hover a{          
-                color: $SecundarioOscuro;
-              }
-              .actual__item{
-                color: $Principal;
-                background-color: white;
-                border-radius: 2rem;
-                color: $SecundarioOscuro;
-
-                &:hover{
-                  background-color: $Secundario;
-                  color: $Principal;
-                }
-              }
-              a{
-                  text-decoration: none;       
-                  letter-spacing: -.5px;
-                  display: flex;
-                  align-items: center;
-                  width: 100%;
-                  height: 40px;            
-                  justify-content:space-evenly;        
-                  color: white;               
-                           
-      
-                  span{
-                      font-size:1.75rem;
-                      
-                      @media screen and (max-width: $big) {
-                          font-size: 2.2rem;
-                          position: absolute;
-                          margin-left: 80px;
-                      }  
-                  }
-            }
-          }    
-        }
-      } 
+    
 
       .banner{
         height: 50vh;
@@ -216,6 +50,10 @@ body{
         align-items: left;
         flex-direction: column;
         padding-left: 100px;
+        @media screen and (max-width:450px) {            
+          height: 75vh;
+          padding-left: 20px;
+      }
         video{
           position: absolute;
           left: 0px;
@@ -225,8 +63,12 @@ body{
           object-fit: cover;
           z-index: -1;
           filter: contrast(90%)
-           brightness(40%)
-            blur(4px);
+                  brightness(40%)
+                  blur(4px);
+
+          @media screen and (max-width:450px) {            
+              top: 0px;
+          }
         }
         h1{
           color: white;
@@ -251,7 +93,9 @@ body{
             justify-content: space-between;
             padding: 50px 100px;
             z-index: 1;
-
+            @media screen and (max-width:450px) {            
+              padding: 50px 10px;
+          }
             .card{
                 width: 250px;
                 min-height: 250px;
@@ -267,7 +111,11 @@ body{
                 opacity: 0;
                 transform: translateY(50vh);
                 
-               
+                @media screen and (max-width:450px) {            
+                  width: 175px;
+                  margin: 5px;
+                  padding: 10px;
+              }
                 &:hover{
                     background-color: white;                
                 }
@@ -330,6 +178,9 @@ body{
             width: 90%;
             margin-top: 100px;
             padding-top: 50px;
+            @media screen and (max-width:450px) {            
+              width: 100%;
+          }
             h1{
                 font-size: 3rem;
                 text-shadow: 0px 0px 3px white;
@@ -357,6 +208,9 @@ body{
             padding-right: 50%;  
             transform: translateX(100vw);   
             opacity: 0;
+            @media screen and (max-width:450px) {            
+              padding-right: 10px;
+          }
             .section__link{
               text-decoration: none;
               color: white;
@@ -365,6 +219,10 @@ body{
               right: 10vw;
               border: 2px solid $SecundarioOscuro;
               padding: 8px 12px;
+              @media screen and (max-width:450px) {  
+                position: relative;
+                right: unset;
+            }
               &:hover{
                 background-color: $SecundarioOscuro;
                 color: white;
@@ -389,7 +247,9 @@ body{
             padding-left: 50%;   
             transform: translateX(-100vw);  
             opacity: 0; 
-            
+            @media screen and (max-width:450px) {            
+              padding-left: 10px;
+          }
             .section__link{
               text-decoration: none;
               color: white;
@@ -398,6 +258,10 @@ body{
               left: 10vw;
               border: 2px solid $SecundarioOscuro;
               padding: 8px 12px;
+              @media screen and (max-width:450px) {  
+                position: relative;
+                left: unset;
+            }
               &:hover{
                 background-color: $SecundarioOscuro;
                 color: white;
@@ -429,35 +293,54 @@ body{
 
 
 footer{
-  width: 100%;
+  width: 100vw;
   min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 30px;
+  @media screen and (max-width:450px) {
+      width: 100vw;
+      top: 0px;     
+      overflow: hidden;   
+  }
   .content{
       width: 80%;
       height: 100%;
       display: grid;
       grid-template-rows: 50% 50%;
       padding: 20px 50px;
+      @media screen and (max-width:450px) {
+          width: 100%;      
+          padding: 0 20px;             
+          min-height: 750px;
+      }
       .top__container{
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          @media screen and (max-width:450px) {
+              flex-direction: column;
+              justify-content: center;
+          }
           .logo{
               display: flex;
               justify-content: space-evenly   ;
               align-items: center;
+              
               p{
-                  strong{
-                      font-size: 2.5rem;
-                  }
                   color: $SecundarioClaro;
                   font-size: 2rem;
                   margin-right: 20px;
+                  @media screen and (max-width:450px) {
+                      margin-right: 0px;
+                  }
+                  strong{
+                      font-size: 2.5rem;
+                  }
+                  
               }
               img{
                   width: 80px;
@@ -468,6 +351,9 @@ footer{
               display: flex;
               justify-content: space-evenly;
               min-width: 40vw;
+              @media screen and (max-width:450px) {
+                  margin-top: 50px;
+              }
               ul{
                   display: flex;
                   flex-direction: column;
@@ -476,10 +362,14 @@ footer{
                   list-style: none;
                   color: white;
                   margin-top: 10px;
+                  @media screen and (max-width:450px) {
+                      margin-right: 20px;
+                  }
                   p{
-                      font-size: 2rem;
-
-                      
+                      font-size: 2rem;       
+                      @media screen and (max-width:450px) {
+                          font-size: 1.5rem;
+                      }                 
                   }
 
                   li{
@@ -489,6 +379,9 @@ footer{
                           font-size: 1.5rem;
                           color: white;
                           font-weight: lighter;
+                          @media screen and (max-width:450px) {
+                              font-size: 1rem;
+                          } 
                       }
                   }
               }
@@ -503,9 +396,18 @@ footer{
           min-height: 150px;
           border-top: 1.5px solid white;
           padding-top: 20px;
+          @media screen and (max-width:450px) {
+              flex-direction: column-reverse;
+              min-height: 250px;
+              padding-bottom: 100px;
+              border-top: none;
+          } 
           p{
               font-size: .9rem;
               color: white;
+              @media screen and (max-width:450px) {
+                  margin-top: 20px;
+              } 
           }
 
           .redes__container{
@@ -513,6 +415,9 @@ footer{
               display: flex;
               justify-content: space-evenly;
               align-items: center;
+              @media screen and (max-width:450px) {
+                  min-width: 30vw;
+              }
               ul{
                   display: flex;
                   list-style: none;
@@ -523,11 +428,15 @@ footer{
                   padding: 5px 12px;
                   border-radius: 3rem;
                   background-color: white;
+                  @media screen and (max-width:450px) {
+                      min-width: 100px;
+                  } 
                   li{
                       margin: auto 5px;
                       width: 50px;
                       height: 50px;
                       display: block;
+                      
                       a{
                           display: flex;
                           width: 50px;
@@ -536,16 +445,23 @@ footer{
                               width: 35px;
                               height: 35px;
                               margin: auto;
+                              @media screen and (max-width:450px) {
+                                  width: 25px;
+                                  height: 25px;
+                              } 
                           }
                       }
                   }
               }
           }
 
-          img{
+          .last__character{
               width: 80px;
               height: 70px;
               margin-right: 20px;
+             @media screen and (max-width:450px) {
+                  display: none;
+              } 
           }
       }
   }

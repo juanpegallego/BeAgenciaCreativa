@@ -184,6 +184,7 @@ main{
         margin-top: 150px;
         @media screen and (max-width:450px) {
             flex-direction: column;
+            margin-top: 80px;
         }
         .card{
             display: flex;
@@ -201,9 +202,7 @@ main{
             opacity: 0;
             transform: translateY(50vh);
             @media screen and (max-width:450px) {
-                height: inherit;
-                background-color: transparent;
-                min-height: 150px;
+                height: 250px;
                 margin-top: 50px;
                 justify-content: center;
             }
@@ -219,6 +218,9 @@ main{
                 background-color: $PrincipalClaro;
                 img{
                     width: 80px;
+                    @media screen and (max-width:450px) {
+                        width: 50px;
+                    }
                 }
             }
            
@@ -322,9 +324,9 @@ article{
             @media screen and (max-width:450px) {
                 width: 200px;
                 position: relative;
-                right: 75px;
+                right: 20px;
                 margin-left: 250px;
-                top: 100px;
+                top: 180px;
                 z-index: -1;
                 opacity: .8;
             }
