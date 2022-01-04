@@ -88,7 +88,9 @@ body {
           body header .cards__container .card {
             width: 175px;
             margin: 5px;
-            padding: 10px; } }
+            padding: 10px;
+            opacity: 1;
+            transform: none; } }
         body header .cards__container .card:hover {
           background-color: white; }
         body header .cards__container .card a {
@@ -159,7 +161,9 @@ body {
       opacity: 0; }
       @media screen and (max-width: 450px) {
         body main .leftside__section {
-          padding-right: 10px; } }
+          padding-right: 10px;
+          opacity: 1;
+          transform: none; } }
       body main .leftside__section .section__link {
         text-decoration: none;
         color: white;
@@ -193,7 +197,9 @@ body {
       opacity: 0; }
       @media screen and (max-width: 450px) {
         body main .rightside__section {
-          padding-left: 10px; } }
+          padding-left: 10px;
+          opacity: 1;
+          transform: none; } }
       body main .rightside__section .section__link {
         text-decoration: none;
         color: white;

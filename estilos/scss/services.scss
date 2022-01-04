@@ -118,6 +118,8 @@ body{
                   width: 175px;
                   margin: 5px;
                   padding: 10px;
+                  opacity: 1;
+                  transform: none;
               }
                 &:hover{
                     background-color: white;                
@@ -213,6 +215,8 @@ body{
             opacity: 0;
             @media screen and (max-width:450px) {            
               padding-right: 10px;
+              opacity: 1;
+              transform: none;
           }
             .section__link{
               text-decoration: none;
@@ -252,6 +256,8 @@ body{
             opacity: 0; 
             @media screen and (max-width:450px) {            
               padding-left: 10px;
+              opacity: 1;
+              transform: none;
           }
             .section__link{
               text-decoration: none;
