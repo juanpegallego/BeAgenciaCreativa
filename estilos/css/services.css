@@ -188,6 +188,9 @@ body {
           top: 20px;
           position: absolute;
           z-index: 1; }
+          @media screen and (max-width: 450px) {
+            body main .leftside__section .section__link::before {
+              width: 80px; } }
       body main .leftside__section p {
         text-align: left;
         margin-top: 40px; }
@@ -224,6 +227,9 @@ body {
           top: 20px;
           position: absolute;
           z-index: 1; }
+          @media screen and (max-width: 450px) {
+            body main .rightside__section .section__link::before {
+              width: 80px; } }
       body main .rightside__section p {
         text-align: right;
         margin-top: 40px; }
