@@ -6,7 +6,8 @@
   font-size: 10px; }
 
 html {
-  scroll-snap-type: y proximity; }
+  scroll-snap-type: y proximity;
+  overflow-x: hidden; }
 
 body {
   min-height: 100vh;
